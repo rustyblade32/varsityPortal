@@ -1,0 +1,15 @@
+﻿@model List<VarsityPortal.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "Courses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Courses</h1>
+
+@foreach (var enrolls in Model)
+{
+    <a asp-action = "ExamMarks" asp-route-Id = "@enrolls.SectionId" class="btn btn-primary m-md-2">
+                                                   @Html.DisplayFor(modelItem => enrolls.Section.Course.Code)
+                                                  (@Html.DisplayFor(modelItem =>enrolls.Section.Number))</a>
+}

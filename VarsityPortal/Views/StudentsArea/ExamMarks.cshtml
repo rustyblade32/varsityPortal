@@ -1,0 +1,41 @@
+﻿@model IEnumerable<VarsityPortal.Models.Mark>
+
+@{
+    ViewData["Title"] = "ExamMarks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ExamMarks</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ExamName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Score)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutOf)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Score)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutOf)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿@model List<VarsityPortal.Models.Mark>
+
+
+@{
+    ViewData["Title"] = "Marks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Marks</h1>
+
+@foreach (var item in Model)
+{
+    <div class="text-center">
+        <a asp-action="ShowMarks" class="btn btn-primary mb-2" >@Html.DisplayFor(itemList => item.ExamName)</a><br />
+    </div>
+
+}

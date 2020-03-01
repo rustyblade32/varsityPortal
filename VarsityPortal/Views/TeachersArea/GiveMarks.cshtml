@@ -1,0 +1,16 @@
+﻿@model IEnumerable<VarsityPortal.Models.Sections>
+
+@{
+    ViewData["Title"] = "GiveMarks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GiveMarks</h1>
+
+<div class="text-center">
+    @foreach(var item in Model)
+    {
+        <a asp-action="StudentMarks" asp-route-id ="@item.Id" class="btn btn-primary m-md-2">@Html.DisplayFor(modelItem => item.Course.Code) 
+                                                              (@Html.DisplayFor(modelItem =>item.Number))</a>
+    }
+</div>

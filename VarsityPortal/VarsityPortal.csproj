@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191212072516_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191212072516_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191212130012_InitialWithIdentity.cs" />
+    <Compile Remove="Migrations\20191212130012_InitialWithIdentity.Designer.cs" />
+    <Compile Remove="Migrations\20191212201502_EmailAdd.cs" />
+    <Compile Remove="Migrations\20191212201502_EmailAdd.Designer.cs" />
+    <Compile Remove="Migrations\20191212201940_EmailAdd.cs" />
+    <Compile Remove="Migrations\20191212201940_EmailAdd.Designer.cs" />
+    <Compile Remove="Migrations\20191212202601_EmailAdd2.cs" />
+    <Compile Remove="Migrations\20191212202601_EmailAdd2.Designer.cs" />
+    <Compile Remove="Migrations\20191212203051_EmailAdd2.cs" />
+    <Compile Remove="Migrations\20191212203051_EmailAdd2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  </ItemGroup>
+
+
+
+</Project>
